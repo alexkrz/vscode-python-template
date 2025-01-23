@@ -8,6 +8,9 @@
         }
     },
     "ruff.lineLength": 99,
+    "ruff.lint.ignore": [
+        "F401", // Allow unused imports
+    ],
     "notebook.codeActionsOnSave": {
         "notebook.source.organizeImports": "explicit"
     },
