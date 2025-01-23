@@ -1,6 +1,6 @@
 channels:
   - conda-forge
-  - defaults
+  # - defaults  # Check license for use of defaults channel
 dependencies:
   - python=3.11.*
   - ipykernel=6.29.*
