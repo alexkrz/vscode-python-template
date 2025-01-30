@@ -24,7 +24,8 @@ repos:
       - id: ruff # This is the linter
         args:
           - --fix
-          - --ignore=F401 # Allow unused imports
+          - --ignore=F401 # Ignore unused imports
+          - --ignore=F841 # Ignore unused variables
       - id: ruff-format # This is the formatter
         args:
           - --line-length=99
