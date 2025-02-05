@@ -9,7 +9,8 @@
     },
     "ruff.lineLength": 99,
     "ruff.lint.ignore": [
-        "F401", // Allow unused imports
+        "F401", // Ignore unused imports
+        "F841", // Ignore unused variables
     ],
     "notebook.codeActionsOnSave": {
         "notebook.source.organizeImports": "explicit"
