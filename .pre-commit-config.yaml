@@ -23,6 +23,7 @@ repos:
     hooks:
       - id: ruff # This is the linter
         args:
+          - --line-length=99 # We also need to apply the line-length to the linter
           - --fix
           - --select
           - I # Sort imports
