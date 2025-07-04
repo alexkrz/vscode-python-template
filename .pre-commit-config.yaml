@@ -19,11 +19,11 @@ repos:
 
   # Ruff formatter
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.11.6
+    rev: v0.12.2
     hooks:
       - id: ruff # This is the linter
         args:
-          - --line-length=99 # We also need to apply the line-length to the linter
+          - --line-length=119 # We also need to apply the line-length to the linter
           - --fix
           - --select
           - I # Sort imports
@@ -31,7 +31,14 @@ repos:
           - --ignore=F841 # Ignore unused variables
       - id: ruff-format # This is the formatter
         args:
-          - --line-length=99
+          - --line-length=119
+
+  # Python upgrading syntax to newer version
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v3.20.0
+    hooks:
+      - id: pyupgrade
+        args: [--py38-plus]
 
   # Jupyter notebook cell output clearing
   - repo: https://github.com/kynan/nbstripout
@@ -41,7 +48,7 @@ repos:
 
   # Markdown linter
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.44.0
+    rev: v0.45.0
     hooks:
       - id: markdownlint
         args:
