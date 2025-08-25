@@ -1,4 +1,4 @@
-from jsonargparse import CLI
+from jsonargparse import auto_cli
 
 
 def main():
@@ -6,4 +6,4 @@ def main():
 
 
 if __name__ == "__main__":
-    CLI(main)
+    auto_cli(main)
