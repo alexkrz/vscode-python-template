@@ -1,4 +1,6 @@
 {
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
     "files.insertFinalNewline": true,
     "editor.formatOnSave": true,
     "[python]": {
@@ -11,9 +13,10 @@
     "ruff.lint.ignore": [
         "F401", // Ignore unused imports
         "F841", // Ignore unused variables
+        "F541", // F-String without any placeholders
     ],
     "notebook.codeActionsOnSave": {
         "notebook.source.organizeImports": "explicit"
     },
-    "notebook.formatOnSave.enabled": false,
+    "notebook.formatOnSave.enabled": true,
 }
