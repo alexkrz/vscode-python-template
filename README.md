@@ -5,11 +5,11 @@ A Template for Python Programming in VSCode
 ## Setup
 
 We recommend [miniforge](https://conda-forge.org/download/) to set up your python environment. \
-Set up a new conda environment with the following commands:
+Then [uv](https://docs.astral.sh/uv/) can be used to install the project dependencies:
 
 ```bash
-conda env create -n $YOUR_ENV_NAME -f environment.yml
+conda create -n $YOUR_ENV_NAME python=3.12
 conda activate $YOUR_ENV_NAME
-pip install -r requirements.txt
+uv pip install -r requirements.txt
 pre-commit install
 ```

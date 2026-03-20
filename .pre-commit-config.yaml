@@ -20,7 +20,7 @@ repos:
 
   # Markdown
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.45.0
+    rev: v0.48.0
     hooks:
       - id: markdownlint
         args:
@@ -33,7 +33,7 @@ repos:
 
   # Ruff formatter
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.14.4
+    rev: v0.15.7
     hooks:
       - id: ruff # This is the linter
         args:
@@ -59,6 +59,6 @@ repos:
 
   # Jupyter notebook cell output clearing
   - repo: https://github.com/kynan/nbstripout
-    rev: 0.8.1
+    rev: 0.9.1
     hooks:
       - id: nbstripout
