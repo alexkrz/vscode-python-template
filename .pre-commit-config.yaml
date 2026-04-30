@@ -42,9 +42,9 @@ repos:
           - --select=I # Sort imports
           - --select=UP # Move pyupgrade into ruff
           - --target-version=py310 # typing module has been made mostly obsolete with Python versions 3.9 and 3.10
-          - --select=E722 # No bare excepts
+          - --select=F401 # Unused imports
+          # - --select=E722 # No bare excepts
           # - --select=F541 # F-Strings without any placeholders
-          # - --ignore=F401 # Unused imports
           # - --ignore=F841 # Unused variables
       - id: ruff-format # This is the formatter
         args:
