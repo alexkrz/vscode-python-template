@@ -33,9 +33,9 @@ repos:
 
   # Ruff formatter
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.15.7
+    rev: v0.15.12
     hooks:
-      - id: ruff # This is the linter
+      - id: ruff-check # This is the linter
         args:
           - --line-length=119 # We also need to apply the line-length to the linter
           - --fix
@@ -49,13 +49,6 @@ repos:
       - id: ruff-format # This is the formatter
         args:
           - --line-length=119
-
-  # Python upgrading syntax to newer version
-  # - repo: https://github.com/asottile/pyupgrade
-  #   rev: v3.20.0
-  #   hooks:
-  #     - id: pyupgrade
-  #       args: [--py310-plus]
 
   # Jupyter notebook cell output clearing
   - repo: https://github.com/kynan/nbstripout
